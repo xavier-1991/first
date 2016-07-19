@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style type="text/css">
+body,ul,p,h2,h3,form{margin: 0;padding: 0;font-size: 12px;font-family: "宋体";}
+li{list-style: none;}
+a{text-decoration: none;}
+input{padding:0; border:1px solid #000;margin:0;}
+select{ border:1px solid #000; padding:0;}
+textarea{padding:0; border:1px solid #000; resize:none;margin:0; overflow:auto;} 
+img{border: none;vertical-align: top;}
+.clear:after{content: "";display: block;clear: both;}
+
+.header{width: 100%;background:url(images/bodyBg.png) repeat-x;height: 54px;}
+.hederContent{width: 1005px;margin: 0 auto;height: 54px;}
+.hederContent h2{float: left;height: 0;padding-top:54px;overflow: hidden;background: url(images/headerBg.png) no-repeat 17px 5px;width: 156px;}
+.hederContent nav{float: right;margin-top:14px;}
+.hederContent nav a{float: left;padding:0 15px 0 12px;color: #fad9db;height: 23px;line-height: 23px;}
+.hederContent form{float: right;margin-top:14px;}
+.btn{width: 24px;height: 23px;border: none; border-left: 1px solid #dfdfdf;background:#f3f3f3 url(images/searchBg.png) no-repeat;float: left;}
+.search{width: 170px;height: 23px;background: #f3f3f3;color: #c2c2c2;float: left;margin-right: 2px;margin: auto 0;border:none;padding-left: 5px;}
+
+.main{width: 1003px;border: 1px solid #d9dce2;border-top: none; margin: 0 auto;position: relative;}
+#img{position: absolute;left: 597px;top: 83px;border:1px solid #d9dce2; }
+.left{width: 191px;border-right: 1px solid #d9dce2;padding:19px 14px 0 15px;background: #f0f5fb;height: 773px;float: left;}
+.left .coming{padding-bottom: 19px;border-bottom:1px solid #adb6c9; }
+.left .text{border: 1px solid #adb6c9;padding-left: 7px;width: 181px;height: 34px;color: #adb6c9;margin-top: 15px;}
+.left .coming div{width: 190px;height: 42px;line-height: 42px;}
+.left .coming div input{float: left;margin-top: 15px;}
+.left .coming lable{padding-left: 5px;float: left;}
+.left .coming a{float: right;color: #336699;}
+.login{background: url(images/bg1.png) repeat-x;width: 190px;height: 36px;color: #fff;border:none;}
+
+.regist{width: 190px;margin-top:19px;padding-bottom: 20px;border-bottom:1px solid #adb6c9;}
+#regist {height: 36px;background: url(images/bg2.png) repeat-x; display: block;line-height: 36px;text-align: center;color:#fff;}
+.regist p{height: 32px;line-height: 32px;color: #999;}
+.regist nav{}
+.regist nav a{float: left;width: 20px;height: 19px;padding:0 7px 0 3px;}
+#qq{background:url(images/bg3.png) no-repeat 3px 0; }
+#weibo{background:url(images/bg4.png) no-repeat 3px 0;}
+#tiyi{background:url(images/bg5.png) no-repeat 3px 0;}
+
+.onload{margin-top: 8px;background: url(images/bg6.png) no-repeat 15px 42px;}
+.onload p{height: 42px;line-height: 42px;color: #999;}
+.ios{margin-top: 101px;width: 190px;height: 34px;background:#f7f7f7 url(images/bg7.png) no-repeat;text-indent: 56px;color: #336699;display: block;line-height: 34px;border:1px solid #adb6c9;}
+.android{margin-top: 11px;width: 190px;height: 34px;background:#f7f7f7 url(images/bg8.png) no-repeat;text-indent: 56px;color: #336699;display: block;line-height: 34px;border:1px solid #adb6c9;}
+.more{height: 44px;width: 180px;color: #c1ccdc;background: url(images/bg9.png) no-repeat right 0;padding-right: 20px;}
+.more a{color: #c1ccdc;float: right;margin-top: 15px;}
+
+/*右侧*/
+.right{float: left;}
+</style>    
+</head>
+<body>
+<header class="header">
+    <div class="hederContent clear">
+    	<h2>开心网</h2>
+    	<form class="titleForm clear" action="" target="_blank">
+    		<input class="search" type="text" name="search" value="搜人/公共主页/应用/内容" />
+    		<input class="btn" type="submit"  value="" />
+    	</form>
+        <nav class="clear">
+            <a href="#">注册</a>
+            <a href="#">注册</a>
+            <a href="#">注册</a>
+            <a href="#">注册</a>
+        </nav>
+    </div>
+</header>
+<section class="main clear">
+    <section class="left">
+        <form class="coming">
+            <input class="text" type="text" name="username" placeholder="邮箱/手机号/其他用户名">
+            <input class="text" type="password" name="password" placeholder="请输入密码">
+            <div class="clear">
+                <input type="checkbox" name="remember"  id="remember" /><label for="remember">下次自动登录</label>
+                <a href="#">忘记密码？</a>
+            </div>
+            <input class="login" type="submit" value="登录" />
+        </form>
+        <div class="regist">
+            <a id="regist" href="#">注册新帐号</a>
+            <p>使用其他方式登录</p>
+            <nav class="clear">
+                <a id="qq" href="#"></a>
+                <a id="weibo" href="#"></a>
+                <a id="tiyi" href="#"></a>
+            </nav>
+        </div>
+        <div class="onload">
+        <p>开心网客户端下载</p>
+        <a class="ios" href="#">iphone/ipad版下载</a>
+        <a class="android" href="#">Android版下载</a>
+        <div class="more clear" >
+          <a href="#">更多</a>
+        </div>
+        </div>
+    </section>
+    <section class="right">
+        <form>
+            <p>还没有开心网帐号吗？赶紧注册吧！</p>
+            <ul>
+                <li>
+                    <label>电子邮箱：</label>
+                    <div>
+                        <input type="text" name="post" />
+                        <p>如果没有邮箱，可以用<a href="#">帐号注册</a></p>
+                    </div>
+                </li>
+                <li>
+                    <label>创建密码：</label>
+                    <div>
+                        <input type="password" name="password" />
+                    </div>
+                </li>
+                <li>
+                    <label>姓名：</label>
+                    <div>
+                        <input type="text" name="name" />
+                    </div>
+                </li>
+                <li>
+                    <label>性别：</label>
+                    <div>
+                        <input type="radio" value="男"  name="gender" id="men" /><label for="men"> 男</label> 
+                        <input type="radio" value="女"  name="gender" id="woman" /> <label for="woman">女</label>
+                    </div>
+                </li>
+                <li>
+                    <label>生日：</label>
+                    <div>
+                       <label>
+                            <select>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option selected>请选择</option>
+                            </select>
+                            <span>年</span>
+                       </label>
+                        <label>
+                            <select>
+                                <option>12</option>
+                                <option>11</option>
+                                <option>10</option>
+                                <option>9</option>
+                                <option selected>--</option>
+                            </select>
+                            <span>月</span>
+                       </label>
+                       <label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option selected>--</option>
+                            </select>
+                            <span>日</span>
+                       </label>
+                    </div>
+                </li>
+                <li>
+                    <label>我现在：</label>
+                    <div>
+                        <input type="radio" value="男"  name="now" id="work" /><label for="work"> 在工作</label> 
+                        <input type="radio" value="女"  name="now" id="study" /> <label for="woman">在上学</label>
+                        <input type="radio" value="女"  name="now" id="other" /> <label for="woman">其它</label>
+                    </div>
+                </li>
+                <li>
+                    <img src="" />
+                    <a href="#">换一张</a>
+                </li>
+                <li>
+                    <label>验证码：</label>
+                    <div>
+                        <input type="text"  name="check" />
+                    </div>
+                </li>
+                <li>
+                    <label></label>
+                    <div>
+                        <input type="checkbox"  checked name="agree" /><label>同意<a href="#">开心网服务条款</a></label>
+                    </div>
+                </li>
+                <li>
+                    <label></label>
+                    <div>
+                        <input type="submit"  value="同意" />
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </section>
+    <img id="img" src="images/img.png" />
+</section>
+</body>
+</html>
